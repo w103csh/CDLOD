@@ -1,0 +1,399 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{4809e8c2-4584-4911-bd8b-6fb862473f6a}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{92ef704c-ef8a-4cf6-b59f-e37b53ae9add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TiledBitmap">
+      <UniqueIdentifier>{f5920eef-5b20-447c-90fe-84e12800f9a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{c08bd00c-e265-4697-9baa-cd1affafafb9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iniparser">
+      <UniqueIdentifier>{951ce7c0-d261-45e9-8d2d-fd1e2800f22a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RecOMatic">
+      <UniqueIdentifier>{5b28e640-f34a-4750-8607-9c305849442a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CDLODStreaming">
+      <UniqueIdentifier>{e4a73865-0786-4254-a119-02c2af7f302a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA">
+      <UniqueIdentifier>{4f4c782a-676b-43ed-b96a-b54e4f42e8a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Core">
+      <UniqueIdentifier>{20186fcf-f211-432f-8de4-5e8411990693}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Core\Common">
+      <UniqueIdentifier>{93a1a533-e2e7-4a34-aaa3-3ec4bda5fa91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Core\Compression">
+      <UniqueIdentifier>{19cbe5cc-7f32-406b-a474-fb9f9d6d7b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Core\Compression\zlib">
+      <UniqueIdentifier>{3298675d-fcfb-45ac-8942-ac8a07bb5d95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Core\IO">
+      <UniqueIdentifier>{2af648d1-3dce-455e-b5f2-d60652b8d89d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Core\Threading">
+      <UniqueIdentifier>{b3bf90bf-c2b0-4863-8974-a43070cbd873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Platform">
+      <UniqueIdentifier>{7660499b-2e22-4bf8-a551-4f52197b0070}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Platform\Win">
+      <UniqueIdentifier>{da32a352-3f91-42a0-b534-209ca523118d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Platform\Win\Core">
+      <UniqueIdentifier>{a3c72023-afe2-4604-9f7d-27a0aa5e43f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VA\Platform\Win\Core\Threading">
+      <UniqueIdentifier>{831eb264-3c3a-4284-b103-1f115ce9cc7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resources\resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="TiledBitmap\MipmappedTiledBitmap.h">
+      <Filter>TiledBitmap</Filter>
+    </ClInclude>
+    <ClInclude Include="TiledBitmap\TiledBitmap.h">
+      <Filter>TiledBitmap</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser\src\dictionary.h">
+      <Filter>iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser\src\iniparser.h">
+      <Filter>iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser\src\IniParser.hpp">
+      <Filter>iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="RecOMatic\DxRecOMatic.h">
+      <Filter>RecOMatic</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingIOManager.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingStorage.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeBase.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeHeightmap.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeNormalmap.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeOverlayImg.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeTextureBase.h">
+      <Filter>CDLODStreaming</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\vaBaseTypes.h">
+      <Filter>VA\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\vaCore.h">
+      <Filter>VA\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Common\vaTempMemoryBuffer.h">
+      <Filter>VA\Core\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\vaCompression.h">
+      <Filter>VA\Core\Compression</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\crc32.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\deflate.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\inffast.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\inffixed.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\inflate.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\inftrees.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\trees.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\zconf.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\zlib.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Compression\zlib\zutil.h">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\IO\vaFileStream.h">
+      <Filter>VA\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\IO\vaMemoryStream.h">
+      <Filter>VA\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\IO\vaStream.h">
+      <Filter>VA\Core\IO</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Threading\vaCriticalSection.h">
+      <Filter>VA\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Threading\vaSemaphore.h">
+      <Filter>VA\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Threading\vaThread.h">
+      <Filter>VA\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Threading\vaThreading.h">
+      <Filter>VA\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Threading\vaThreadingTypes.h">
+      <Filter>VA\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Core\Threading\vaThreadPool.h">
+      <Filter>VA\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Platform\Win\vaCommonWin.h">
+      <Filter>VA\Platform\Win</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaCriticalSectionPlatformSpecific.h">
+      <Filter>VA\Platform\Win\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaSemaphorePlatformSpecific.h">
+      <Filter>VA\Platform\Win\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaThreadingPlatformSpecific.h">
+      <Filter>VA\Platform\Win\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaThreadingPlatformSpecificTypes.h">
+      <Filter>VA\Platform\Win\Core\Threading</Filter>
+    </ClInclude>
+    <ClInclude Include="CDLODQuadTree.h" />
+    <ClInclude Include="CDLODRenderer.h" />
+    <ClInclude Include="CDLODTools.h" />
+    <ClInclude Include="DemoCamera.h" />
+    <ClInclude Include="DemoCameraRecorder.h" />
+    <ClInclude Include="DemoMain.h" />
+    <ClInclude Include="DemoRenderer.h" />
+    <ClInclude Include="DemoSky.h" />
+    <ClInclude Include="DxCanvas.h" />
+    <ClInclude Include="DxEventNotifier.h" />
+    <ClInclude Include="DxGridMesh.h" />
+    <ClInclude Include="DxShader.h" />
+    <ClInclude Include="MiniMath.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="SimpleProfiler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Resources\StreamingCDLOD.manifest">
+      <Filter>Resources</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\StreamingCDLOD.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="TiledBitmap\MipmappedTiledBitmap.cpp">
+      <Filter>TiledBitmap</Filter>
+    </ClCompile>
+    <ClCompile Include="TiledBitmap\TiledBitmap.cpp">
+      <Filter>TiledBitmap</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\dictionary.c">
+      <Filter>iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\iniparser.c">
+      <Filter>iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\IniParser.cpp">
+      <Filter>iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="RecOMatic\DxRecOMatic.cpp">
+      <Filter>RecOMatic</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingIOManager.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingStorage.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeBase.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeHeightmap.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeNormalmap.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeOverlayImg.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeTextureBase.cpp">
+      <Filter>CDLODStreaming</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\vaCompression.cpp">
+      <Filter>VA\Core\Compression</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\adler32.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\compress.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\crc32.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\deflate.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\infback.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\inffast.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\inflate.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\inftrees.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\trees.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\uncompr.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\zlib\zutil.c">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\IO\vaFileStream.cpp">
+      <Filter>VA\Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\IO\vaMemoryStream.cpp">
+      <Filter>VA\Core\IO</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Threading\vaThreadPool.cpp">
+      <Filter>VA\Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="VA\Platform\Win\Core\Threading\vaWinThread.cpp">
+      <Filter>VA\Platform\Win\Core\Threading</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODQuadTree.cpp" />
+    <ClCompile Include="CDLODRenderer.cpp" />
+    <ClCompile Include="CDLODTools.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="DemoCamera.cpp" />
+    <ClCompile Include="DemoCameraRecorder.cpp" />
+    <ClCompile Include="DemoMain.cpp" />
+    <ClCompile Include="DemoRenderer.cpp" />
+    <ClCompile Include="DemoSky.cpp" />
+    <ClCompile Include="DirectX9Main.cpp" />
+    <ClCompile Include="DxCanvas.cpp" />
+    <ClCompile Include="DxEventNotifier.cpp" />
+    <ClCompile Include="DxGridMesh.cpp" />
+    <ClCompile Include="DxShader.cpp" />
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="SimpleProfiler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\CDLODTerrain.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\CDLODTerrain.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\common.sh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\deferred.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\lightingShared.sh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\misc.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\splatting.sh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="VA\Core\Compression\zlib\algorithm.txt">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </None>
+    <None Include="VA\Core\Compression\zlib\ChangeLog">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </None>
+    <None Include="VA\Core\Compression\zlib\FAQ">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </None>
+    <None Include="VA\Core\Compression\zlib\README">
+      <Filter>VA\Core\Compression\zlib</Filter>
+    </None>
+    <None Include="!README_StreamingCDLOD.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Common.h" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{7264371c-1cc1-48d3-8569-6314bf76a39b}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe</Extensions>
+    </Filter>
+    <Filter Include="DXUT">
+      <UniqueIdentifier>{8ba1b024-3800-4886-8919-fb8354f7163c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TiledBitmap">
+      <UniqueIdentifier>{7ef80c43-2afe-4ddd-8a24-7cedd4a24643}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{4084221c-d0c8-44e0-b3bf-b8a7a41837ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="iniparser">
+      <UniqueIdentifier>{8ce3ae49-02b7-4130-9fa3-8c9ad10764a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RecOMatic">
+      <UniqueIdentifier>{e68d3743-0655-4f33-b30d-cf5b00652a02}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Resources\BasicCDLOD.manifest">
+      <Filter>Resources</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\BasicCDLOD.rc">
+      <Filter>Resources</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resources\resource.h">
+      <Filter>Resources</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUT.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTenum.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTgui.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Core\DXUTmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTres.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT\Optional\SDKmisc.h">
+      <Filter>DXUT</Filter>
+    </ClInclude>
+    <ClInclude Include="TiledBitmap\TiledBitmap.h">
+      <Filter>TiledBitmap</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser\src\dictionary.h">
+      <Filter>iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser\src\iniparser.h">
+      <Filter>iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="iniparser\src\IniParser.hpp">
+      <Filter>iniparser</Filter>
+    </ClInclude>
+    <ClInclude Include="RecOMatic\Avi.h">
+      <Filter>RecOMatic</Filter>
+    </ClInclude>
+    <ClInclude Include="RecOMatic\DxRecOMatic.h">
+      <Filter>RecOMatic</Filter>
+    </ClInclude>
+    <ClInclude Include="CascadedVolumeMap.h" />
+    <ClInclude Include="CDLODQuadTree.h" />
+    <ClInclude Include="CDLODRenderer.h" />
+    <ClInclude Include="DemoCamera.h" />
+    <ClInclude Include="DemoMain.h" />
+    <ClInclude Include="DemoRenderer.h" />
+    <ClInclude Include="DemoShadowsRenderer.h" />
+    <ClInclude Include="DemoSky.h" />
+    <ClInclude Include="DxCanvas.h" />
+    <ClInclude Include="DxEventNotifier.h" />
+    <ClInclude Include="DxGridMesh.h" />
+    <ClInclude Include="DxShader.h" />
+    <ClInclude Include="MiniMath.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp">
+      <Filter>DXUT</Filter>
+    </ClCompile>
+    <ClCompile Include="TiledBitmap\TiledBitmap.cpp">
+      <Filter>TiledBitmap</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\dictionary.c">
+      <Filter>iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\iniparser.c">
+      <Filter>iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\IniParser.cpp">
+      <Filter>iniparser</Filter>
+    </ClCompile>
+    <ClCompile Include="RecOMatic\Avi.cpp">
+      <Filter>RecOMatic</Filter>
+    </ClCompile>
+    <ClCompile Include="RecOMatic\DxRecOMatic.cpp">
+      <Filter>RecOMatic</Filter>
+    </ClCompile>
+    <ClCompile Include="CDLODQuadTree.cpp" />
+    <ClCompile Include="CDLODRenderer.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="DemoCamera.cpp" />
+    <ClCompile Include="DemoMain.cpp" />
+    <ClCompile Include="DemoRenderer.cpp" />
+    <ClCompile Include="DemoShadowsRenderer.cpp" />
+    <ClCompile Include="DemoSky.cpp" />
+    <ClCompile Include="DirectX9Main.cpp" />
+    <ClCompile Include="DxCanvas.cpp" />
+    <ClCompile Include="DxEventNotifier.cpp" />
+    <ClCompile Include="DxGridMesh.cpp" />
+    <ClCompile Include="DxShader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\CDLODTerrain.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\CDLODTerrain.vsh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\common.sh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\misc.psh">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="!README_BasicCDLOD.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Common.h" />
+  </ItemGroup>
+</Project>

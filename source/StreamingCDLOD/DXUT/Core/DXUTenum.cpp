@@ -3852,8 +3852,8 @@ void DXUTBuildValidD3D10DeviceSettings( DXUTD3D10DeviceSettings* pValidDeviceSet
                     if( refreshRateMatch.Denominator )
                         fDenom2 = (float)refreshRateMatch.Denominator;
 
-                    float fCurRanking = abs( float( displayMode.RefreshRate.Numerator ) / fDenom1  -
-                                             float( refreshRateMatch.Numerator ) / fDenom2 );
+                    float fCurRanking = fabs( float( displayMode.RefreshRate.Numerator ) / fDenom1  -
+                                              float( refreshRateMatch.Numerator ) / fDenom2 );
 
                     if( fCurRanking < fBestRefreshRanking )
                     {

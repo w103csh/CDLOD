@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3D10109-96D0-4629-88B8-122C0256058C}</ProjectGuid>
+    <RootNamespace>WaterflowSim</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC71.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>16.0.30804.86</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Bin\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Bin\$(Configuration)\</OutDir>
+    <IntDir>Intermediate\$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <PreBuildEvent>
+      <Command />
+    </PreBuildEvent>
+    <CustomBuildStep>
+      <Message>Copying shaders, media and required binaries...</Message>
+      <Command>xcopy "$(ProjectDir)Shaders" "$(ProjectDir)\Bin\$(Configuration)\Shaders\"  /F /Y /E
+xcopy "$(ProjectDir)Media" "$(ProjectDir)\Bin\$(Configuration)\Media\"  /F /Y /E
+</Command>
+      <Outputs>$(ProjectDir)\Bin\$(Configuration)\Shaders\common.sh;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;VA;VA\Platform\Win;$(DXSDK_DIR)\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;ADVANTAGE_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile />
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 /fixed:no %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9d.lib;d3d9.lib;winmm.lib;comctl32.lib;dxgi.lib;d3d10.lib;d3dx10d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(DXSDK_DIR)\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <CustomBuildStep>
+      <Message>Copying shaders, media and required binaries...</Message>
+      <Command>xcopy "$(ProjectDir)Shaders" "$(ProjectDir)\Bin\$(Configuration)\Shaders\"  /F /Y /E
+xcopy "$(ProjectDir)Media" "$(ProjectDir)\Bin\$(Configuration)\Media\"  /F /Y /E
+</Command>
+      <Outputs>$(ProjectDir)\Bin\$(Configuration)\Shaders\common.sh;%(Outputs)</Outputs>
+    </CustomBuildStep>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <OmitFramePointers>true</OmitFramePointers>
+      <AdditionalIncludeDirectories>DXUT\Core;DXUT\Optional;VA;VA\Platform\Win;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <PrecompiledHeaderFile />
+      <ExpandAttributedSource>false</ExpandAttributedSource>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>/IGNORE:4089 /FIXED:NO %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;winmm.lib;comctl32.lib;dxgi.lib;d3d10.lib;d3dx10.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command />
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CDLODQuadTree.h" />
+    <ClInclude Include="CDLODRenderer.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingIOManager.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingStorage.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeBase.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeHeightmap.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeNormalmap.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeOverlayImg.h" />
+    <ClInclude Include="CDLODStreaming\CDLODStreamingTypeTextureBase.h" />
+    <ClInclude Include="CDLODTools.h" />
+    <CustomBuild Include="Common.h" />
+    <ClInclude Include="DemoCamera.h" />
+    <ClInclude Include="DemoCameraRecorder.h" />
+    <ClInclude Include="DemoMain.h" />
+    <ClInclude Include="DemoRenderer.h" />
+    <ClInclude Include="DemoSky.h" />
+    <ClInclude Include="DxCanvas.h" />
+    <ClInclude Include="DxEventNotifier.h" />
+    <ClInclude Include="DxGridMesh.h" />
+    <ClInclude Include="DxShader.h" />
+    <ClInclude Include="DXUT\Core\DXUT.h" />
+    <ClInclude Include="DXUT\Core\DXUTenum.h" />
+    <ClInclude Include="DXUT\Core\DXUTmisc.h" />
+    <ClInclude Include="DXUT\Optional\DXUTgui.h" />
+    <ClInclude Include="DXUT\Optional\DXUTres.h" />
+    <ClInclude Include="DXUT\Optional\DXUTsettingsdlg.h" />
+    <ClInclude Include="DXUT\Optional\SDKmisc.h" />
+    <ClInclude Include="iniparser\src\dictionary.h" />
+    <ClInclude Include="iniparser\src\iniparser.h" />
+    <ClInclude Include="iniparser\src\IniParser.hpp" />
+    <ClInclude Include="MiniMath.h" />
+    <ClInclude Include="ProgressDlg.h" />
+    <ClInclude Include="RecOMatic\DxRecOMatic.h" />
+    <ClInclude Include="Resources\resource.h" />
+    <ClInclude Include="SimpleProfiler.h" />
+    <ClInclude Include="TiledBitmap\MipmappedTiledBitmap.h" />
+    <ClInclude Include="TiledBitmap\TiledBitmap.h" />
+    <ClInclude Include="VA\Core\Common\vaTempMemoryBuffer.h" />
+    <ClInclude Include="VA\Core\Compression\vaCompression.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\crc32.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\deflate.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\inffast.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\inffixed.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\inflate.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\inftrees.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\trees.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\zconf.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\zlib.h" />
+    <ClInclude Include="VA\Core\Compression\zlib\zutil.h" />
+    <ClInclude Include="VA\Core\IO\vaFileStream.h" />
+    <ClInclude Include="VA\Core\IO\vaMemoryStream.h" />
+    <ClInclude Include="VA\Core\IO\vaStream.h" />
+    <ClInclude Include="VA\Core\Threading\vaCriticalSection.h" />
+    <ClInclude Include="VA\Core\Threading\vaSemaphore.h" />
+    <ClInclude Include="VA\Core\Threading\vaThread.h" />
+    <ClInclude Include="VA\Core\Threading\vaThreading.h" />
+    <ClInclude Include="VA\Core\Threading\vaThreadingTypes.h" />
+    <ClInclude Include="VA\Core\Threading\vaThreadPool.h" />
+    <ClInclude Include="VA\Core\vaBaseTypes.h" />
+    <ClInclude Include="VA\Core\vaCore.h" />
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaCriticalSectionPlatformSpecific.h" />
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaSemaphorePlatformSpecific.h" />
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaThreadingPlatformSpecific.h" />
+    <ClInclude Include="VA\Platform\Win\Core\Threading\vaThreadingPlatformSpecificTypes.h" />
+    <ClInclude Include="VA\Platform\Win\vaCommonWin.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="Resources\StreamingCDLOD.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources\StreamingCDLOD.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CDLODQuadTree.cpp" />
+    <ClCompile Include="CDLODRenderer.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingIOManager.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingStorage.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeBase.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeHeightmap.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeNormalmap.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeOverlayImg.cpp" />
+    <ClCompile Include="CDLODStreaming\CDLODStreamingTypeTextureBase.cpp" />
+    <ClCompile Include="CDLODTools.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="DemoCamera.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DemoCameraRecorder.cpp" />
+    <ClCompile Include="DemoMain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DemoRenderer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DemoSky.cpp" />
+    <ClCompile Include="DirectX9Main.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DxCanvas.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DxEventNotifier.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DxGridMesh.cpp" />
+    <ClCompile Include="DxShader.cpp" />
+    <ClCompile Include="DXUT\Core\DXUT.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DXUT\Core\DXUTenum.cpp" />
+    <ClCompile Include="DXUT\Core\DXUTmisc.cpp" />
+    <ClCompile Include="DXUT\Optional\DXUTgui.cpp" />
+    <ClCompile Include="DXUT\Optional\DXUTres.cpp" />
+    <ClCompile Include="DXUT\Optional\DXUTsettingsdlg.cpp" />
+    <ClCompile Include="DXUT\Optional\SDKmisc.cpp" />
+    <ClCompile Include="iniparser\src\dictionary.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\iniparser.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="iniparser\src\IniParser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.obj</ObjectFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(IntDir)%(Filename)1.xdc</XMLDocumentationFileName>
+    </ClCompile>
+    <ClCompile Include="ProgressDlg.cpp" />
+    <ClCompile Include="RecOMatic\DxRecOMatic.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SimpleProfiler.cpp" />
+    <ClCompile Include="TiledBitmap\MipmappedTiledBitmap.cpp" />
+    <ClCompile Include="TiledBitmap\TiledBitmap.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="VA\Core\Compression\vaCompression.cpp" />
+    <ClCompile Include="VA\Core\Compression\zlib\adler32.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\compress.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\crc32.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\deflate.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\infback.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\inffast.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\inflate.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\inftrees.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\trees.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\uncompr.c" />
+    <ClCompile Include="VA\Core\Compression\zlib\zutil.c" />
+    <ClCompile Include="VA\Core\IO\vaFileStream.cpp" />
+    <ClCompile Include="VA\Core\IO\vaMemoryStream.cpp" />
+    <ClCompile Include="VA\Core\Threading\vaThreadPool.cpp" />
+    <ClCompile Include="VA\Platform\Win\Core\Threading\vaWinThread.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="!README_StreamingCDLOD.txt" />
+    <None Include="Shaders\CDLODTerrain.psh" />
+    <None Include="Shaders\CDLODTerrain.vsh" />
+    <None Include="Shaders\common.sh" />
+    <None Include="Shaders\deferred.psh" />
+    <None Include="Shaders\lightingShared.sh" />
+    <None Include="Shaders\misc.psh" />
+    <None Include="Shaders\splatting.sh" />
+    <None Include="VA\Core\Compression\zlib\algorithm.txt" />
+    <None Include="VA\Core\Compression\zlib\ChangeLog" />
+    <None Include="VA\Core\Compression\zlib\FAQ" />
+    <None Include="VA\Core\Compression\zlib\README" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
